@@ -1,38 +1,128 @@
 .App {
-  text-align: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	align-items: flex-start;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chats-container {
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.chat-card {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.thumbnail {
+	margin: 5px;
+}
+
+.order-title {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.search-container {
+	width: 70%;
+	display: flex;
+	padding: 5px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.body {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid;
+}
+
+.search-title {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.chat-screen {
+	width: 75%;
+	background-color: #f1f3f6;
+	padding: 10px;
+}
+
+.message {
+	width: 33%;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.help-container {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid;
+	width: 340px;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+.btn {
+	color: blue;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.desc {
+	height: 40px;
+	margin: 10px;
+	display: flex;
+	border-radius: 5px;
+	text-align: center;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.input {
+	width: 90%;
+	border-radius: 5px;
+}
+
+.input-msg {
+	display: flex;
+	margin-top: 120%;
+	height: 45px;
+	padding: 5px;
 }
